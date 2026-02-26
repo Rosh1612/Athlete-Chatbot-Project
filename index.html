@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Athlete-Chatbot - Train Smarter</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+
+<header>
+    <div class="logo">Athlete-Chatbot</div>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#science">Science</a>
+        <a href="#events">Event Training</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <div class="hero-content">
+        <h1>Athletic Performance Platform</h1>
+        <img src="images/AI-Powered Athletic Performance Platform image.jpg" alt="Athlete AI Platform">
+        <p>100% Free. No Login. No Subscription. Made for humanity, awareness and fitness.</p>
+        <button onclick="scrollToSection('science')">Explore Science</button>
+    </div>
+</section>
+
+<section id="about" class="section">
+    <h2>About This Platform</h2>
+    <p>
+        Athlete-Chatbot is an open-access endurance science platform. Every blog, 
+        every guide and every performance concept is freely available.
+        This project is designed to spread scientific awareness in running,
+        cycling, swimming and multi-sport training.
+    </p>
+</section>
+
+<section id="common-sports" class="section">
+
+    <h2>Common Sports & Outdoor Activities</h2>
+
+    <!-- RUNNING -->
+    <div class="sport-block">
+        <img src="images/run image.jpg" alt="Running">
+        <div>
+            <h3>Running</h3>
+
+            <p><strong>Basic Information:</strong> Running is a form of aerobic exercise where both feet leave the ground during each stride. It strengthens the heart and improves overall cardiovascular health.</p>
+
+            <p><strong>How to Start:</strong> Begin by mixing walking and jogging. The “Couch to 5K” method gradually builds endurance over several weeks. Increase distance slowly.</p>
+
+            <p><strong>Events:</strong><br>
+            • 5K (3.1 miles) – Ideal beginner race.<br>
+            • 10K (6.2 miles) – Next progression step.<br>
+            • Half Marathon (13.1 miles) – Requires structured training.<br>
+            • Marathon (26.2 miles) – Ultimate endurance milestone.</p>
+
+            <p><strong>Necessary Accessories:</strong> Good running shoes are essential. Moisture-wicking clothes, water bottle, and GPS watch or tracking app are recommended.</p>
+
+            <p><strong>Facts to Know:</strong> Slow conversational pace builds aerobic base and improves VO₂ Max. Consistency matters more than speed.</p>
+        </div>
+    </div>
+
+
+    <!-- SWIMMING -->
+    <div class="sport-block">
+        <img src="images/swimming.jpeg" alt="Swimming">
+        <div>
+            <h3>Swimming</h3>
+
+            <p><strong>Basic Information:</strong> Swimming is a full-body, low-impact workout that builds strength and endurance while being gentle on joints.</p>
+
+            <p><strong>How to Start:</strong> Learn proper stroke techniques (freestyle, breaststroke, backstroke). Start with short sessions and increase gradually.</p>
+
+            <p><strong>Events:</strong><br>
+            • Swim Meets – Competitive pool races.<br>
+            • Open Water Swims – Lakes, rivers, oceans.<br>
+            • Triathlons – Multi-sport events including swim leg.</p>
+
+            <p><strong>Necessary Accessories:</strong> Swimsuit, goggles, swim cap. Kickboards and pull buoys can assist training.</p>
+
+            <p><strong>Facts to Know:</strong> Exhale underwater and inhale during rotation. Technique efficiency is more important than force.</p>
+        </div>
+    </div>
+
+
+    <!-- HIKING -->
+    <div class="sport-block">
+        <img src="images/hikinh.jpg" alt="Hiking">
+        <div>
+            <h3>Hiking</h3>
+
+            <p><strong>Basic Information:</strong> Hiking is walking on trails in natural settings such as forests and mountains. It ranges from easy to challenging terrain.</p>
+
+            <p><strong>How to Start:</strong> Choose short, flat trails first. Inform someone about your route and gradually increase difficulty.</p>
+
+            <p><strong>Events:</strong><br>
+            • Group Hikes – Organized nature outings.<br>
+            • Thru-Hiking – Completing long-distance trails.<br>
+            • Peak Bagging – Reaching mountain summits.</p>
+
+            <p><strong>Necessary Accessories:</strong> Sturdy hiking shoes, backpack, water, snacks, map/GPS, layered clothing.</p>
+
+            <p><strong>Facts to Know:</strong> Follow “Leave No Trace” principles. Always check weather and trail conditions.</p>
+        </div>
+    </div>
+
+
+    <!-- CYCLING -->
+    <div class="sport-block">
+    <img src="images/cycling.jpg" alt="Cycling">
+        <div>
+            <h3>Cycling</h3>
+
+            <p><strong>Basic Information:</strong> Cycling is a low-impact cardiovascular activity performed on roads, trails, or indoors.</p>
+
+            <p><strong>How to Start:</strong> Use a properly fitted bike. Start with short rides in safe areas and gradually increase distance.</p>
+
+            <p><strong>Events:</strong><br>
+            • Road Races – Competitive paved events.<br>
+            • Mountain Bike Races – Off-road trail racing.<br>
+            • Charity Rides – Non-competitive fundraising rides.<br>
+            • Gran Fondos – Mass participation timed rides.</p>
+
+            <p><strong>Necessary Accessories:</strong> Helmet (mandatory), water bottle, bike lights, lock, basic repair kit. Padded shorts improve comfort.</p>
+
+            <p><strong>Facts to Know:</strong> Maintain tire pressure and clean chain regularly. Follow traffic laws when riding on roads.</p>
+        </div>
+    </div>
+
+</section>
+
+<section id="science" class="section">
+    <h2>Performance Science & Human Physiology</h2>
+
+    <p style="margin-bottom:40px;">
+        To understand athletic performance at a rigorous level, we must analyze the physiological,
+        metabolic, biomechanical and thermodynamic systems that govern human movement.
+        Below is a science-first breakdown tailored for endurance and power-based sports.
+    </p>
+
+    <!-- METABOLIC SYSTEMS -->
+    <div class="science-block">
+    <img src="images/vo2-max.jpg" alt="VO2 Max Testing">
+        <div>
+            <h3>1. VO₂ Max (Maximal Oxygen Consumption)</h3>
+
+            <p><strong>Definition:</strong> VO₂ Max represents the maximum volume of oxygen the body can utilize during incremental intense exercise. It is the gold standard measure of cardiorespiratory fitness.</p>
+
+            <p><strong>Fick Equation:</strong></p>
+            <p style="background:#1a1a1a; padding:10px; border-radius:6px;">
+                VO₂ = Q × (CaO₂ − CvO₂)
+            </p>
+
+            <p>
+                Where Q = Cardiac Output, and (CaO₂ − CvO₂) = Arteriovenous Oxygen Difference.
+                This equation explains that oxygen usage depends on how much blood the heart pumps
+                and how efficiently muscles extract oxygen.
+            </p>
+
+            <p><strong>Athletic Application:</strong>
+                In running and cycling, a higher VO₂ Max increases aerobic capacity ceiling.
+                In swimming, VO₂ is often limited by stroke mechanics and breathing control.
+            </p>
+
+            <p><strong>Elite Benchmarks:</strong>
+                Men: 75–85 ml/kg/min |
+                Women: 65–75 ml/kg/min
+            </p>
+        </div>
+    </div>
+
+
+    <!-- LACTATE THRESHOLD -->
+    <div class="science-block">
+    <img src="images/Lactate-Threshold.jpg" alt="Lactate Threshold Graph">
+        <div>
+            <h3>2. Lactate Threshold (LT)</h3>
+
+            <p>
+                Lactate Threshold is the intensity where lactate accumulates faster than it can be cleared.
+                It determines sustainable race pace.
+            </p>
+
+            <ul>
+                <li><strong>LT₁ (Aerobic Threshold):</strong> First measurable rise in blood lactate.</li>
+                <li><strong>LT₂ (Maximal Lactate Steady State):</strong> Highest intensity sustainable without exponential fatigue.</li>
+            </ul>
+
+            <p>
+                Half Marathon and Marathon performance are more strongly predicted by LT₂
+                than by VO₂ Max alone.
+                Elite athletes shift LT from ~70% to ~90% of VO₂ Max.
+            </p>
+        </div>
+    </div>
+
+
+    <!-- HEART RATE ZONES -->
+    <div class="science-block">
+    <img src="images/heart-rate.png" alt="Heart Rate Zones Chart">
+        <div>
+            <h3>3. Cardiovascular Dynamics & HR Zones</h3>
+
+            <p>Training intensity is categorized by percentage of Maximum Heart Rate (MHR).</p>
+
+            <div class="comparison-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Zone</th>
+                            <th>Intensity</th>
+                            <th>Physiological Adaptation</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Zone 1</td>
+                            <td>50–60%</td>
+                            <td>Recovery & metabolic waste removal</td>
+                        </tr>
+                        <tr>
+                            <td>Zone 2</td>
+                            <td>60–70%</td>
+                            <td>Mitochondrial density & fat oxidation</td>
+                        </tr>
+                        <tr>
+                            <td>Zone 3</td>
+                            <td>70–80%</td>
+                            <td>Capillary growth & blood volume expansion</td>
+                        </tr>
+                        <tr>
+                            <td>Zone 4</td>
+                            <td>80–90%</td>
+                            <td>Lactate clearance & glycogen efficiency</td>
+                        </tr>
+                        <tr>
+                            <td>Zone 5</td>
+                            <td>90–100%</td>
+                            <td>Stroke volume & anaerobic capacity</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <p style="margin-top:15px;">
+                <strong>Swimming Note:</strong> Due to Mammalian Dive Reflex and cooling effect,
+                swim heart rate is typically 10–15 bpm lower than running at equal effort.
+            </p>
+        </div>
+    </div>
+
+
+    <!-- BIOMECHANICS -->
+    <div class="science-block">
+    <img src="images/Movement Economy & Efficiency.jpg" alt="Movement Economy and Efficiency">
+        <div>
+            <h3>4. Movement Economy & Efficiency</h3>
+
+            <p>
+                Economy refers to oxygen cost at submaximal speeds.
+                Two athletes with equal VO₂ Max can perform differently based on efficiency.
+            </p>
+
+            <ul>
+                <li><strong>Running Economy:</strong> Influenced by tendon stiffness and vertical oscillation.</li>
+                <li><strong>Cycling Economy:</strong> Measured via Functional Threshold Power (FTP).</li>
+                <li><strong>Swimming Economy:</strong> Measured using SWOLF (Strokes + Seconds).</li>
+            </ul>
+
+            <p>
+                In swimming, hydrodynamic drag is often the limiting factor,
+                not aerobic capacity.
+            </p>
+        </div>
+    </div>
+
+
+    <!-- THERMAL & GLYCOGEN -->
+    <div class="science-block">
+        <img src="images/Glycogen Sparing & Thermoregulation.jpg" alt="Endurance Race Heat">
+        <div>
+            <h3>5. Glycogen Sparing & Thermoregulation</h3>
+
+            <p>
+                At lower intensities, fat oxidation dominates.
+                As intensity rises, glycogen becomes primary fuel.
+            </p>
+
+            <p>
+                Endurance training shifts the metabolic “crossover point,”
+                allowing athletes to conserve glycogen for final race stages.
+            </p>
+
+            <p>
+                <strong>Cardiac Drift:</strong> During dehydration,
+                stroke volume decreases and heart rate rises despite constant pace.
+            </p>
+        </div>
+    </div>
+
+
+    <!-- SCIENCE SUMMARY TABLE -->
+    <div class="comparison-table" style="margin-top:60px;">
+        <h3>Scientific Focus by Discipline</h3>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Metric</th>
+                    <th>Running / Marathon</th>
+                    <th>Triathlon / Cycling</th>
+                    <th>Competitive Swimming</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Primary Predictor</td>
+                    <td>Lactate Threshold (LT₂)</td>
+                    <td>Power-to-Weight Ratio</td>
+                    <td>Biomechanical Efficiency</td>
+                </tr>
+                <tr>
+                    <td>Energy System</td>
+                    <td>Aerobic Lipolysis</td>
+                    <td>Mixed Glycolytic</td>
+                    <td>Anaerobic Glycolytic</td>
+                </tr>
+                <tr>
+                    <td>Limiting Factor</td>
+                    <td>Glycogen Depletion</td>
+                    <td>Thermal Stress</td>
+                    <td>Hydrodynamic Drag</td>
+                </tr>
+                <tr>
+                    <td>Key Variable</td>
+                    <td>Vertical Oscillation</td>
+                    <td>Cadence & Torque</td>
+                    <td>Stroke Length/Frequency</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</section>
+
+<section id="events" class="section">
+
+    <h2>Event Training Modules</h2>
+
+    <!-- HALF MARATHON -->
+    <div class="event-card event-layout">
+        <img src="images/Half Marathon (21.1 km).jpg" alt="Half Marathon Training">
+        <div class="event-content">
+            <h3>1. Half Marathon (21.1 km)</h3>
+
+            <p>The Half Marathon is a gateway endurance event requiring a strong aerobic foundation while remaining more accessible than a full marathon.</p>
+
+            <ul>
+                <li><strong>Preparation Timeline:</strong> 10–14 weeks structured training</li>
+                <li><strong>Weekly Running Volume:</strong> 25–60 km</li>
+                <li><strong>Long Runs:</strong> 14–18 km</li>
+                <li><strong>Core Focus:</strong> Aerobic Base + Lactate Threshold Development</li>
+                <li><strong>Workout Types:</strong> Tempo Runs, Progression Runs, Intervals</li>
+                <li><strong>Nutrition:</strong> Carbohydrate loading strategy before race</li>
+                <li><strong>Recovery:</strong> 7–8 hours sleep + mobility work</li>
+            </ul>
+        </div>
+    </div>
+
+
+    <!-- FULL MARATHON -->
+    <div class="event-card event-layout">
+        <img src="images/Full Marathon (42.2 km).jpg" alt="Full Marathon Training">
+        <div class="event-content">
+            <h3>2. Full Marathon (42.2 km)</h3>
+
+            <p>The Marathon is a high-commitment endurance challenge demanding both physical resilience and mental strength.</p>
+
+            <ul>
+                <li><strong>Preparation Timeline:</strong> 16–20 weeks</li>
+                <li><strong>Weekly Running Volume:</strong> 40–90 km</li>
+                <li><strong>Peak Long Runs:</strong> 24–32 km</li>
+                <li><strong>Core Focus:</strong> Aerobic Endurance + Glycogen Efficiency</li>
+                <li><strong>In-Race Strategy:</strong> Fueling & hydration every 30–45 minutes</li>
+                <li><strong>Major Risk:</strong> Overtraining & injury prevention critical</li>
+            </ul>
+        </div>
+    </div>
+
+
+    <!-- TRIATHLON -->
+    <div class="event-card event-layout">
+        <img src="images/Triathlon (Olympic Distance).jpg" alt="Triathlon Training Module">
+        <div class="event-content">
+            <h3>3. Triathlon (Olympic Distance)</h3>
+
+            <p>A multi-sport endurance event requiring proficiency in swim, bike, and run with seamless transitions.</p>
+
+            <ul>
+                <li><strong>Distances:</strong> 1.5 km Swim / 40 km Bike / 10 km Run</li>
+                <li><strong>Weekly Plan:</strong> 2 swims, 3 bikes, 3 runs</li>
+                <li><strong>Brick Workouts:</strong> Bike → Run sessions</li>
+                <li><strong>Transition Practice:</strong> T1 & T2 efficiency training</li>
+                <li><strong>Equipment:</strong> Pool access, road bike, helmet, tri-suit</li>
+            </ul>
+        </div>
+    </div>
+
+
+    <!-- COMPETITIVE SWIMMING -->
+    <div class="event-card event-layout">
+        <img src="images/Competitive Swimming.jpg" alt="Competitive Swimming Training">
+        <div class="event-content">
+            <h3>4. Competitive Swimming</h3>
+
+            <p>Focused on technical efficiency, controlled breathing, and explosive power.</p>
+
+            <ul>
+                <li><strong>Core Focus:</strong> Stroke Efficiency + Breathing Discipline</li>
+                <li><strong>Aerobic Sets:</strong> 200–400m repeats</li>
+                <li><strong>Sprint Intervals:</strong> 50–100m bursts</li>
+                <li><strong>Injury Prevention:</strong> Shoulder & rotator cuff strengthening</li>
+            </ul>
+        </div>
+    </div>
+
+<!-- </section> -->
+    <!-- SUMMARY TABLE -->
+    <div class="comparison-table">
+        <h3>Summary Comparison</h3>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Event</th>
+                    <th>Primary Focus</th>
+                    <th>Key Metric</th>
+                    <th>Major Risk / Requirement</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Half Marathon</td>
+                    <td>Speed + Endurance</td>
+                    <td>25–60 km Weekly Mileage</td>
+                    <td>Lactate Threshold Training</td>
+                </tr>
+                <tr>
+                    <td>Full Marathon</td>
+                    <td>Total Endurance</td>
+                    <td>40–90 km Weekly Mileage</td>
+                    <td>Overtraining & Fueling Strategy</td>
+                </tr>
+                <tr>
+                    <td>Triathlon</td>
+                    <td>Multi-sport Integration</td>
+                    <td>8+ Sessions per week</td>
+                    <td>Brick & Transition Workouts</td>
+                </tr>
+                <tr>
+                    <td>Swimming</td>
+                    <td>Technique & Power</td>
+                    <td>Stroke Efficiency</td>
+                    <td>Shoulder Injury Prevention</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</section>
+
+<section id="reviews" class="section">
+    <h2>Every possible stuff/accessories required on raceday !!!!!</h2>
+    <h4> for more details refer -> <a href = "https://www.amphibia-sport.com/triathlon-gear/"> visit Triathlon Gear
+    </a> </h4>
+    <img src="images/race day stuff.jpg" alt="accessories on raceday"> 
+    
+    <br><br><br><br><br><br><br><h2>Trusted by Athletes Worldwide</h2>
+    <img src="images/Trusted by Athletes Worldwide feedback.jpg" alt="Trusted by Athletes Feedback">
+    <h3>⭐ 4.7 / 5 Rating | 56,000+ Reviews</h3>
+
+    <div class="reviews-container" id="reviewsContainer">
+
+        <div class="review-card">
+            <div class="stars">★★★★★</div>
+            <p>"Improved my VO2 max in 3 months using structured training."</p>
+            <strong>- Rohan P.</strong>
+        </div>
+
+        <div class="review-card">
+            <div class="stars">★★★★☆</div>
+            <p>"Best free endurance science resource online."</p>
+            <strong>- Meera S.</strong>
+        </div>
+
+        <div class="review-card">
+            <div class="stars">★★★★★</div>
+            <p>"Helped me complete my first triathlon confidently."</p>
+            <strong>- Daniel K.</strong>
+        </div>
+
+        <div class="review-card">
+            <div class="stars">★★★★★</div>
+            <p>"Structured training plans are scientifically accurate."</p>
+            <strong>- Aisha R.</strong>
+        </div>
+
+        <div class="review-card">
+            <div class="stars">★★★★☆</div>
+            <p>"Clear explanations of lactate threshold and VO2 Max."</p>
+            <strong>- Vikram T.</strong>
+        </div>
+
+        <div class="review-card">
+            <div class="stars">★★★★★</div>
+            <p>"Feels like a real performance lab online."</p>
+            <strong>- Neha K.</strong>
+        </div>
+
+    </div>
+
+    <!-- FEEDBACK SECTION -->
+    <div class="feedback-section">
+        <h3>Share Your Experience</h3>
+
+        <form id="feedbackForm">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <textarea id="message" placeholder="Write your feedback..." required></textarea>
+
+            <label>Select Rating:</label>
+            <select id="rating">
+                <option value="5">★★★★★ (5)</option>
+                <option value="4">★★★★☆ (4)</option>
+                <option value="3">★★★☆☆ (3)</option>
+                <option value="2">★★☆☆☆ (2)</option>
+                <option value="1">★☆☆☆☆ (1)</option>
+            </select>
+
+            <button type="submit">Submit Feedback</button>
+        </form>
+    </div>
+
+</section>
+
+<section id="contact" class="section">
+    <h2>Project Information</h2>
+    <p>
+        Developed by Roshan.  
+        For humanity, awareness and fitness.  
+        100% free access to all performance education.
+    </p>
+</section>
+
+<footer>
+    <p>© 2026 Athlete-Chatbot | Developed by Roshan | For humanity, awareness and fitness.</p>
+</footer>
+
+<div class="chatbot-btn" onclick="openChatbot()">💬</div>
+
+</body>
+</html>
